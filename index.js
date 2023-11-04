@@ -1,4 +1,5 @@
 const inquirer = require("inquirer");
+// may error asking me to change require to import
 const svg = require("./lib/svg");
 const {Circle, Triangle, Square} = require("./lib/shapes");
 const fs = require("fs");
@@ -37,7 +38,13 @@ class Init{
           },
     
         ])
-        .then
+        // .then
+
+        //should be getting back:
+        //logoText.value
+        //textColor.value
+        //logoShape.value
+        //shapeColor.value
 
 
 
@@ -52,5 +59,5 @@ class Init{
     }
 }
 
-
+// error: Init.run is not a function
 Init.run();
