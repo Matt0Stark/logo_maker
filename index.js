@@ -7,8 +7,7 @@ const fs = require("fs");
 // fancy const fs from tutor, keeping for further exploration
 // const {writeFile} = require("fs/promises")
 
-class Init{
-    run(){
+function init(){
         return inquirer
         .prompt([
           {
@@ -38,26 +37,15 @@ class Init{
           },
     
         ])
-        // .then
+        .then( responses => {
+          console.log(responses)
+        })
+         .catch((err) => {
+           console.log(err);
+           console.log('Oops. Something went wrong.');
+          })
+};
 
-        //should be getting back:
-        //logoText.value
-        //textColor.value
-        //logoShape.value
-        //shapeColor.value
-
-
-
-
-
-
-
-        
-        // .catch((err) => {
-        //   console.log(err);
-        //   console.log('Oops. Something went wrong.');
-    }
-}
 
 // error: Init.run is not a function
-Init.run();
+init();
