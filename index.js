@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
-// may error asking me to change require to import
-const svg = require("./lib/svg");
+
+const {SVG} = require("./lib/svg");
 const {Circle, Triangle, Square} = require("./lib/shapes");
 const fs = require("fs");
 
@@ -37,14 +37,29 @@ function init(){
           },
     
         ])
-        .then( responses => {
+        .then( (responses) => {
           console.log(responses)
+          
+          const newLogo = new SVG
+          SVG.setText()
+
+
+          // const textEl = new SVG 
+
+
+
+
+          // fs.writeFile("logo.svg", JSON.stringify(data, null, '\t'), (err) =>
+          // err ? console.log(err) : console.log('Success!')
+          // );
+         
         })
          .catch((err) => {
            console.log(err);
            console.log('Oops. Something went wrong.');
           })
 };
+
 
 
 // error: Init.run is not a function
