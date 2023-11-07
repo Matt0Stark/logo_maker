@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 
-const {SVG} = require("./lib/svg");
+const SVG = require("./lib/svg");
 const {Circle, Triangle, Square} = require("./lib/shapes");
 const fs = require("fs");
 
@@ -38,15 +38,34 @@ function init(){
     
         ])
         .then( (responses) => {
-          console.log(responses)
-          
-          const newLogo = new SVG
-          SVG.setText()
+          // console.log(responses)
+    
+
+          const logoText = responses.logoText;
+          const textColor = responses.textColor;
+          const logoShape = responses.logoShape;
+          const shapeColor = responses.shapeColor;
+
+          // console.log(logoText)
+
+          const svg = new SVG(logoText, textColor, logoShape, shapeColor);
+          svg.setText();
+          svg.setShape();
+
+         const finalSvg = svg.render();
+         console.log(finalSvg) 
 
 
-          // const textEl = new SVG 
+          fs.writeFile("logo.svg", finalSvg, (err) =>
+          err ? console.log(err) : console.log('Success!')
+          );
 
 
+
+
+
+
+      
 
 
           // fs.writeFile("logo.svg", JSON.stringify(data, null, '\t'), (err) =>
