@@ -9,15 +9,15 @@ node index.js
 ```
 
 ## Screen Shots 
+![screenshot of terminal](./assets/logoMakerScreenShot1.png)
+
+![screenshot of result](./assets/logoMakerScreenShot2.png)
 
 
 ## Links
+[GitHub]https://github.com/Matt0Stark/logo_maker
 
+[Walk-through-Video]https://drive.google.com/file/d/1cZDB053oloKWN8KGKWUB2AP0pb6wSIfg/view?usp=sharing
 
-
-
-You’ll need to submit a link to the video **and** add it to the README of your project.
-
-Refer to the [Video Submission Guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide) on the Full-Stack Blog for additional guidance on creating a video.
 
 
