@@ -17,7 +17,9 @@ node index.js
 ## Links
 [GitHub]https://github.com/Matt0Stark/logo_maker
 
-[Walk-through-Video]https://drive.google.com/file/d/1cZDB053oloKWN8KGKWUB2AP0pb6wSIfg/view?usp=sharing
+[Application-Walk-Through-Video]https://drive.google.com/file/d/1cZDB053oloKWN8KGKWUB2AP0pb6wSIfg/view?usp=sharing
+
+[Test-Walk-Through-Video]https://drive.google.com/file/d/1ff9QksqhFy14H-85_-VaNagQXkmIdmlN/view
 
 
 
